@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDGs 影音策展 | 永續發展目標專區</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: #FDFCF8; color: #2D3748; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        
+        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        
+        .video-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .video-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        
+        /* 保持影片 16:9 比例 */
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 text-gray-600 hover:text-[#1B4D3E] transition group">
+                <i data-lucide="arrow-left" class="w-5 h-5 group-hover:-translate-x-1 transition"></i>
+                <span class="font-bold">返回總覽</span>
+            </a>
+            <div class="flex items-center gap-3">
+                <h1 class="text-lg font-bold tracking-wide text-[#1B4D3E] hidden md:block">SDGs Video Gallery</h1>
+                <div class="w-8 h-8 bg-[#1B4D3E] text-white flex items-center justify-center rounded-full shadow-lg">
+                    <i data-lucide="play-circle" class="w-5 h-5"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-16 px-6 bg-gradient-to-b from-green-50 to-[#FDFCF8]">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="inline-block py-1 px-3 bg-[#1B4D3E] text-white text-[10px] font-bold tracking-widest mb-6 rounded-full uppercase tracking-[0.2em]">Multimedia Exhibition</span>
+            <h1 class="serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">影音策展：看見永續未來</h1>
+            <p class="text-lg text-gray-500 font-light max-w-2xl mx-auto leading-relaxed">
+                精選 15 部 SDGs 相關影音資源，透過影像深度了解環境保護、社會平權與全球目標。
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="video-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/nc2Kjhrcmhs" allowfullscreen></iframe>
+                </div>
+                <div class="mt-5">
+                    <span class="text-[10px] bg-red-100 text-red-600 px-2 py-1 rounded-full font-bold uppercase tracking-wider">SDG Global</span>
+                    <h3 class="font-bold text-gray-800 mt-3 line-clamp-1">什麼是永續發展目標 SDGs?</h3>
+                </div>
+            </div>
+
+            <div class="video-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/O_JzvajijDg" allowfullscreen></iframe>
+                </div>
+                <div class="mt-5">
+                    <span class="text-[10px] bg-blue-100 text-blue-600 px-2 py-1 rounded-full font-bold uppercase tracking-wider">SDG Action</span>
+                    <h3 class="font-bold text-gray-800 mt-3 line-clamp-1">2030 永續發展目標</h3>
+                </div>
+            </div>
+
+            <div class="video-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/9PeqYNUOgko" allowfullscreen></iframe>
+                </div>
+                <div class="mt-5">
+                    <span class="text-[10px] bg-green-100 text-green-600 px-2 py-1 rounded-full font-bold uppercase tracking-wider">SDG 13 Climate</span>
+                    <h3 class="font-bold text-gray-800 mt-3 line-clamp-1">氣候變遷與我們的距離</h3>
+                </div>
+            </div>
+
+            <div class="video-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/2Q5idId2TgU" allowfullscreen></iframe>
+                </div>
+                <div class="mt-5">
+                    <span class="text-[10px] bg-yellow-100 text-yellow-600 px-2 py-1 rounded-full font-bold uppercase tracking-wider">SDG Education</span>
+                    <h3 class="font-bold text-gray-800 mt-3 line-clamp-1">優質教育的推動力</h3>
+                </div>
+            </div>
+
+            <div class="video-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/HoyHomebdOM" allowfullscreen></iframe>
+                </div>
+                <div class="mt-5">
+                    <span class="text-[10px] bg-orange-100 text-orange-600 px-2 py-1 rounded-full font-bold uppercase tracking-wider">SDG Community</span>
+                    <h3 class="font-bold text-gray-800 mt-3 line-clamp-1">永續城鄉與社區</h3>
+                </div>
+            </div>
+
+            <div class="video-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Ht3v3zPK-BY" allowfullscreen></iframe>
+                </div>
+                <div class="mt-5">
+                    <span class="text-[10px] bg-purple-100 text-purple-600 px-2 py-1 rounded-full font-bold uppercase tracking-wider">SDG Innovation</span>
+                    <h3 class="font-bold text-gray-800 mt-3 line-clamp-1">產業、創新與基礎建設</h3>
+                </div>
+            </div>
+
+            <div class="video-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/YZYBFB2x8-Q" allowfullscreen></iframe>
+                </div>
+                <div class="mt-5">
+                    <span class="text-[10px] bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full font-bold uppercase tracking-wider">SDG Equality</span>
+                    <h3 class="font-bold text-gray-800 mt-3 line-clamp-1">減少不平等</h3>
+                </div>
+            </div>
+
+            <div class="video-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/0cO1WQJus_k" allowfullscreen></iframe>
+                </div>
+                <div class="mt-5">
+                    <span class="text-[10px] bg-teal-100 text-teal-600 px-2 py-1 rounded-full font-bold uppercase tracking-wider">SDG Water</span>
+                    <h3 class="font-bold text-gray-800 mt-3 line-clamp-1">淨水與衛生設備</h3>
+                </div>
+            </div>
+
+            <div class="video-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/LtVzAI29iSk" allowfullscreen></iframe>
+                </div>
+                <div class="mt-5">
+                    <span class="text-[10px] bg-emerald-100 text-emerald-600 px-2 py-1 rounded-full font-bold uppercase tracking-wider">SDG Health</span>
+                    <h3 class="font-bold text-gray-800 mt-3 line-clamp-1">良好健康與福祉</h3>
+                </div>
+            </div>
+
+            <div class="video-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/pj3LFwZJ-oI" allowfullscreen></iframe>
+                </div>
+                <div class="mt-5">
+                    <span class="text-[10px] bg-cyan-100 text-cyan-600 px-2 py-1 rounded-full font-bold uppercase tracking-wider">SDG Energy</span>
+                    <h3 class="font-bold text-gray-800 mt-3 line-clamp-1">可負擔的潔淨能源</h3>
+                </div>
+            </div>
+
+            <div class="video-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/B_vZXXYtDEs" allowfullscreen></iframe>
+                </div>
+                <div class="mt-5">
+                    <span class="text-[10px] bg-rose-100 text-rose-600 px-2 py-1 rounded-full font-bold uppercase tracking-wider">SDG Partners</span>
+                    <h3 class="font-bold text-gray-800 mt-3 line-clamp-1">多元夥伴關係</h3>
+                </div>
+            </div>
+
+            <div class="video-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/b6Hu3HRWUvo" allowfullscreen></iframe>
+                </div>
+                <div class="mt-5">
+                    <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-1 rounded-full font-bold uppercase tracking-wider">SDG Overview</span>
+                    <h3 class="font-bold text-gray-800 mt-3 line-clamp-1">SDG 核心理念分享</h3>
+                </div>
+            </div>
+
+            <div class="video-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/I1rkbxoYLDI" allowfullscreen></iframe>
+                </div>
+                <div class="mt-5">
+                    <span class="text-[10px] bg-blue-50 text-blue-500 px-2 py-1 rounded-full font-bold uppercase tracking-wider">Future Vision</span>
+                    <h3 class="font-bold text-gray-800 mt-3 line-clamp-1">邁向 2030：我們的永續未來</h3>
+                </div>
+            </div>
+
+            <div class="video-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/7dzFbP2AgFo" allowfullscreen></iframe>
+                </div>
+                <div class="mt-5">
+                    <span class="text-[10px] bg-green-50 text-green-700 px-2 py-1 rounded-full font-bold uppercase tracking-wider">Global Lesson</span>
+                    <h3 class="font-bold text-gray-800 mt-3 line-clamp-1">全球最大的一堂課：SDGs 教育</h3>
+                </div>
+            </div>
+
+            <div class="video-card bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/s3Kv1c4ovTc" allowfullscreen></iframe>
+                </div>
+                <div class="mt-5">
+                    <span class="text-[10px] bg-orange-50 text-orange-700 px-2 py-1 rounded-full font-bold uppercase tracking-wider">SDG Impact</span>
+                    <h3 class="font-bold text-gray-800 mt-3 line-clamp-1">永續發展目標：為人類與地球採取行動</h3>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+   <footer class="bg-[#1B4D3E] text-white/80 py-10">
+        <div class="max-w-7xl mx-auto px-8 text-center text-xs sm:text-sm leading-loose tracking-wide">
+            <p class="font-bold text-base mb-2">新生學校財團法人新生醫護管理專科學校</p>
+            <p>Copyright © 2026 All Rights Reserved.</p>
+            <p>325桃園市龍潭區中豐路高平段418號</p>
+            <p>TEL: (03)411-7578 轉 250 & 251</p>
+            <p>E-Mail: lib@hsc.edu.tw</p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

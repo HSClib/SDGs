@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 1 終結貧窮 | 圖書館資源策展</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        :root { --sdg-color: #E5243B; --bg-color: #FDFCF8; }
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: var(--bg-color); color: #2D3748; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .section-title { position: relative; display: inline-block; margin-bottom: 2rem; color: #1a202c; }
+        .section-title::after { content: ''; position: absolute; left: 0; bottom: -8px; width: 60px; height: 4px; background-color: var(--sdg-color); border-radius: 2px; }
+        .resource-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); height: 100%; display: flex; flex-direction: column; }
+        .resource-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 glass-nav" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 text-gray-600 hover:text-[#E5243B] transition group">
+                <i data-lucide="arrow-left" class="w-5 h-5 group-hover:-translate-x-1 transition"></i>
+                <span class="font-bold">返回總覽</span>
+            </a>
+            <div class="flex items-center gap-2">
+                <img src="sdgs1.jpg" class="w-8 h-8 rounded shadow-sm">
+                <span class="serif font-bold text-xl text-[#E5243B] hidden md:inline">No Poverty</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-16 px-6 bg-gradient-to-b from-red-50 to-[#FDFCF8]">
+        <div class="max-w-5xl mx-auto text-center flex flex-col items-center">
+            <img src="sdgs1.jpg" alt="SDG 1 Icon" class="w-24 h-24 mb-6 rounded-xl shadow-lg border-2 border-white block mx-auto" onerror="this.src='https://open-sdg.github.io/sdg-translations/assets/img/goals/zh-Han/1.png'">
+            
+            <span class="inline-block py-1 px-3 bg-[#E5243B] text-white text-[10px] font-bold tracking-widest mb-6 rounded-full uppercase tracking-[0.2em]">Goal 1 Exhibition</span>
+            
+            <h1 class="serif text-4xl md:text-6xl font-bold text-gray-900 mb-6 flex items-center justify-center gap-3">
+                <i data-lucide="hand-metal" class="text-[#E5243B] w-10 h-10 md:w-14 md:h-14"></i>
+                消除貧窮
+            </h1>
+            
+            <p class="text-lg text-gray-600 font-light max-w-3xl mx-auto leading-relaxed italic opacity-80 flex items-center justify-center gap-2 text-center">
+                <i data-lucide="heart-handshake" class="text-[#E5243B] w-5 h-5 flex-shrink-0"></i>
+                <span>「確保每個人都能享有安全、營養且充足的食物。」</span>
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="space-y-24">
+
+            <section id="intro">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="info" class="text-[#E5243B]"></i> 指標深度解析
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="font-bold text-lg mb-4 text-[#E5243B] flex items-center gap-2"><i data-lucide="alert-circle"></i> 絕對貧窮定義</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">貧窮不僅是缺乏收入，更包含飢餓、營養不良、缺乏教育、受歧視和被排斥，以及無法參與決策等結構性問題。</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="font-bold text-lg mb-4 text-[#E5243B] flex items-center gap-2"><i data-lucide="stethoscope"></i> 因病而貧議題</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">作為醫護專科學校，我們關注健康權與經濟能力間的惡性循環，探討如何透過醫療福利與社會安全網終止貧窮。</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="font-bold text-lg mb-4 text-[#E5243B] flex items-center gap-2"><i data-lucide="trending-down"></i> 弱勢群體賦權</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">致力於確保所有男性與女性，特別是弱勢族群，享有平等獲取經濟資源、基本服務與土地產權的權利。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="books">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="book-open" class="text-[#E5243B]"></i> 精選館藏圖書 (Books)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E5%8C%97%E6%A5%B5%E7%86%8A%E4%B8%8D%E5%93%AD" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg1pap1.jpg" alt="北極熊不哭" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">北極熊不哭</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：367 8723 2012</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">透過極端氣候與北極熊困境解析生物多樣性，引發守護地球使命感。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/206499" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg1pap2.jpg" alt="美麗的地球" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">美麗的地球</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：367.8 8357 2019</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">壯麗圖解展現自然奇景與生態奧秘，啟發實踐環境永續共榮。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E5%BD%A9%E8%89%B2%E5%9C%96%E8%A7%A3%E6%88%B0%E5%8B%9DPM2.5" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg1pap3.jpg" alt="彩色圖解戰勝PM2.5" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">彩色圖解戰勝PM2.5</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：367.41 8356 2018</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">圖解空汙對健康威脅與防護策略，助你對抗隱形殺手守護呼吸道。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E7%AA%AE%E4%BA%BA%E6%9D%91" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg1pap4.jpg" alt="窮人村的姊妹創業家" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">窮人村的姊妹創業家</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：488.9 8854 2014</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">記錄印度姊妹透過微型貸款創業掙脫枷鎖，展現改寫命運的韌性。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac?q=A057055" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg1pap5.jpg" alt="窮忙族-新貧階級時代的來臨" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">窮忙族-新貧時代來臨</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：548.16 8464</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">揭露低薪與高物價下的生存危機，反思結構性貧窮並尋找翻身契機。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dvd">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="disc" class="text-[#E5243B]"></i> DVD 影音館藏 (Audio-Visual)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/204031" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg1DVD1.jpg" alt="水的戰爭" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-2">水的戰爭</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">揭示水資源私有化引發的全球鬥爭，反思權力分配與正義。</p>
+                            <div class="text-[10px] text-[#E5243B] font-bold uppercase mt-1">DVD 554.61 8435 2011</div>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E7%9F%B3%E6%B2%B9%E7%A7%98%E8%BE%9B" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg1DVD2.jpg" alt="石油秘辛" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-2">石油秘辛</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">揭露石油爭奪戰背後的利益與謀略，反思開發對正義的衝擊。</p>
+                            <div class="text-[10px] text-[#E5243B] font-bold uppercase mt-1">DVD 457.01 8645 2010</div>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E6%B5%B7%E6%B4%8B%E5%A1%91%E8%86%A0%E5%9E%83%E5%9C%BE%E8%88%87%E7%94%9F%E6%85%8B%E5%8D%B1%E6%A9%9F&max=0&view=CONTENT&level=all&material_type=all&location=0" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg1DVD3.jpg" alt="海洋塑膠垃圾與生態危機" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-2">海洋塑膠垃圾與生態危機</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">揭露塑膠垃圾對海洋棲地的致命危害，呼籲從源頭減塑，守護生物多樣性。</p>
+                            <div class="text-[10px] text-[#E5243B] font-bold uppercase mt-1">DVD 445.96 8633 2018</div>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E5%AF%84%E7%94%9F%E4%B8%8A%E6%B5%81&max=&view=CONTENT&level=all&material_type=all&location=" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg1DVD4.jpg" alt="寄生上流" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-2">寄生上流</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">辛辣諷刺階級鴻溝，揭示貧窮難以跨越的社會殘酷。</p>
+                            <div class="text-[10px] text-[#E5243B] font-bold uppercase mt-1">DVD 987.83 8598-2 2020</div>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/112199?location=0&q=%E8%B2%A7%E6%B0%91%E7%99%BE%E8%90%AC%E5%AF%8C%E7%BF%81&start=0&view=CONTENT" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg1DVD5.jpg" alt="貧民百萬富翁" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-2">貧民百萬富翁</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">見證少年在底層掙扎中，憑藉經驗翻轉命運。</p>
+                            <div class="text-[10px] text-[#E5243B] font-bold uppercase mt-1">DVD 987.83 878</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ebooks">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="tablet-smartphone" class="text-[#E5243B]"></i> 館藏電子書 (E-Books)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.ebook.hyread.com.tw/bookDetail.jsp?id=3052" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg1ebook1.jpg" alt="抗暖化關鍵報告" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">抗暖化關鍵報告</h3>
+                            <p class="text-[10px] text-[#E5243B] font-bold mb-2">Hyread</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">解析全球暖化迷思，結合台灣數據，提出減碳與調適指南。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.ebook.hyread.com.tw/bookDetail.jsp?id=224837" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg1ebook2.jpg" alt="極度地球" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">極度地球</h3>
+                            <p class="text-[10px] text-[#E5243B] font-bold mb-2">Hyread</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">聚焦全球極端自然景觀，結合科學圖解省思氣候危機與韌性。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/244573" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg1ebook3.jpg" alt="改變世界的100個生態行動" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">改變世界的100個生態行動</h3>
+                            <p class="text-[10px] text-[#E5243B] font-bold mb-2">UDN讀書館</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">精選百項生活環保提案，從食衣住行落實低碳選擇。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/46325" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg1ebook4.jpg" alt="氣候創造歷史" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">氣候創造歷史</h3>
+                            <p class="text-[10px] text-[#E5243B] font-bold mb-2">UDN讀書館</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">解析氣候變遷如何主導王朝興替與戰爭，反思人與自然的共生。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/218879" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg1ebook5.jpg" alt="誰製造了貧窮？" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">誰製造了貧窮？</h3>
+                            <p class="text-[10px] text-[#E5243B] font-bold mb-2">UDN讀書館</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">剖析不公義制度與資源壟斷，揭開貧窮背後的結構真相。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="online-videos">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="clapperboard" class="text-[#E5243B]"></i> 線上影音資源 (Online Streaming)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/e5fafdf4-4e0e-40f6-88e1-8faa89493b4d" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg1onvideo1.jpg" alt="人生轉運站" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80" onerror="this.src='https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=400'">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">人生轉運站</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-3">三位性格孤僻的邊緣人在舊火車站相遇，透過陪伴重拾生命溫度。</p>
+                            <div class="text-[10px] text-[#E5243B] font-bold">館藏地：教室電影院公播大平台</div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/ecd47496-7b2a-4400-af41-8ab41c977012" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg1onvideo2.jpg" alt="我想有個家" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80" onerror="this.src='https://images.unsplash.com/photo-1594708767771-a7502209ff51?auto=format&fit=crop&q=80&w=400'">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">我想有個家</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-3">敘利亞難民男孩在極端貧窮中掙扎，憤而控告父母「生而不養」。</p>
+                            <div class="text-[10px] text-[#E5243B] font-bold">館藏地：教室電影院公播大平台</div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/c2d77386-1ba7-4aba-8c68-26f073cc7d45" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg1onvideo3.jpg" alt="浪人47愁錢中" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80" onerror="this.src='https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&q=80&w=400'">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">浪人47愁錢中</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-3">幽默描繪武士復仇計畫面臨的財務危機，在柴米油鹽間展現韌性。</p>
+                            <div class="text-[10px] text-[#E5243B] font-bold">館藏地：教室電影院公播大平台</div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/ed24c06d-f6e3-4f92-985d-ecc26f9c6391" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg1onvideo4.jpg" alt="逆流成長日記" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80" onerror="this.src='https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&q=80&w=400'">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">逆流成長日記</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-3">主角在偏見與逆境中奮力突圍，透過堅持與覺察翻轉平凡人生。</p>
+                            <div class="text-[10px] text-[#E5243B] font-bold">館藏地：教室電影院公播大平台</div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/f9a5337f-dfeb-4314-8874-5897ae22b651" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg1onvideo5.jpg" alt="無家可歸的我們" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80" onerror="this.src='https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&q=80&w=400'">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">無家可歸的我們</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-3">直擊無家者流轉街頭的生存紀實，反思居住正義與生命的尊嚴。</p>
+                            <div class="text-[10px] text-[#E5243B] font-bold">館藏地：教室電影院公播大平台</div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white/50 py-12 text-center text-[10px] tracking-widest">
+        <div class="max-w-7xl mx-auto px-8 text-center text-xs sm:text-sm leading-loose tracking-wide">
+            <p class="font-bold text-base mb-2">新生學校財團法人新生醫護管理專科學校</p>
+            <p>Copyright © 2026 All Rights Reserved.</p>
+            <p>325桃園市龍潭區中豐路高平段418號</p>
+            <p>TEL: (03)411-7578 轉 250 & 251</p>
+            <p>E-Mail: lib@hsc.edu.tw</p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

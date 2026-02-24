@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 2 消除飢餓 | 圖書館資源策展</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        :root { --sdg-color: #DDA63A; --bg-color: #FDFCF8; }
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: var(--bg-color); color: #2D3748; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .section-title { position: relative; display: inline-block; margin-bottom: 2rem; color: #1a202c; }
+        .section-title::after { content: ''; position: absolute; left: 0; bottom: -8px; width: 60px; height: 4px; background-color: var(--sdg-color); border-radius: 2px; }
+        .resource-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); height: 100%; display: flex; flex-direction: column; }
+        .resource-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 glass-nav" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 text-gray-600 hover:text-[#DDA63A] transition group">
+                <i data-lucide="arrow-left" class="w-5 h-5 group-hover:-translate-x-1 transition"></i>
+                <span class="font-bold">返回總覽</span>
+            </a>
+            <div class="flex items-center gap-2">
+                <img src="sdgs2.png" class="w-8 h-8 rounded shadow-sm">
+                <span class="serif font-bold text-xl text-[#DDA63A] hidden md:inline">Zero Hunger</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-16 px-6 bg-gradient-to-b from-orange-50 to-[#FDFCF8]">
+        <div class="max-w-5xl mx-auto text-center flex flex-col items-center">
+            <img src="sdgs2.png" alt="SDG 2 Icon" class="w-24 h-24 mb-6 rounded-xl shadow-lg border-2 border-white">
+            
+            <span class="inline-block py-1 px-3 bg-[#DDA63A] text-white text-[10px] font-bold tracking-widest mb-6 rounded-full uppercase tracking-[0.2em]">Goal 2 Exhibition</span>
+            <h1 class="serif text-4xl md:text-6xl font-bold text-gray-900 mb-4">消除飢餓</h1>
+            <p class="text-lg text-gray-600 font-light max-w-3xl mx-auto leading-relaxed italic opacity-80">
+                「確保每個人都能享有安全、營養且充足的食物。」
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="space-y-24">
+
+            <section id="intro">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="info" class="text-[#DDA63A]"></i> 指標深度解析
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="font-bold text-lg mb-4 text-[#DDA63A] flex items-center gap-2"><i data-lucide="globe"></i> 全球糧食危機</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">儘管現代農業技術發達，全球仍有超過 8 億人處於長期飢餓。SDG 2 旨在解決糧食供應不均問題，推動保護土地資源的生產模式。</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="font-bold text-lg mb-4 text-[#DDA63A] flex items-center gap-2"><i data-lucide="heart-pulse"></i> 醫護與營養健康</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">關注「隱性飢餓」——即微量營養素缺乏。確保弱勢群體、產婦與兒童獲得公平的營養供應，是預防慢性病、提升群體健康的關鍵。</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="font-bold text-lg mb-4 text-[#DDA63A] flex items-center gap-2"><i data-lucide="leaf"></i> 個人與永續飲食</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">減少食物浪費、支持在地永續農產品。每個人小小的習慣改變，都是推動全球永續農業轉型的重要力量。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="books">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="book-open" class="text-[#DDA63A]"></i> 精選館藏圖書 (Books)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac?q=%E5%A0%86%E8%82%A5%E8%AE%8A%E6%B2%83%E5%9C%9F%E7%9C%9F%E7%B0%A1%E5%96%AE" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg2pap1.jpg" alt="堆肥變沃土真簡單" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">堆肥變沃土真簡單</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：432.3 8934</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">居家廚餘變肥料，環保又健康，種花種菜都適用。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E6%B0%B4%E6%9E%9C%E9%81%B8%E8%B3%BC%E9%A3%9F%E7%94%A8%E5%9C%96%E9%91%91" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg2pap2.jpg" alt="水果選購食用圖鑑" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">水果選購食用圖鑑</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：435.5 8745</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">教你挑選、清洗與保存，吃得更安全健康又營養。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E5%90%83%E7%95%B6%E5%AD%A3%E7%9B%9B%E7%94%A2%2C%E6%9C%80%E5%A5%BD%21&max=&view=CONTENT&level=all&material_type=all&location=" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg2pap3.jpg" alt="蔬食" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">吃當季盛產,最好!</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：411.3 8443</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">順應季節與土壤種菜無需農藥，簡單料理即可呈現天然美味與健康。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E5%9C%96%E8%A7%A3%E9%A3%9F%E5%93%81%E5%AE%89%E5%85%A8%E5%85%A8%E6%9B%B8" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg2pap4.jpg" alt="圖解食品安全全書" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">圖解食品安全全書</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：412.37 8235</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">解析食品添加物與殘留物危害，教你安心選購與去除有害物質的實用技巧。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=+%E5%AE%89%E5%BF%83%E8%94%AC%E8%8F%9C%E8%87%AA%E5%B7%B1%E7%A8%AE%21" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg2pap5.jpg" alt="安心蔬菜自己種!" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">安心蔬菜自己種!</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：435.2 8275</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">善用日照水分在家種菜，小空間也能自給自足，享受無毒安心的鮮採美味。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dvd">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="disc" class="text-[#DDA63A]"></i> DVD 影音館藏 (Audio-Visual)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E7%BE%8E%E5%91%B3%E4%BB%A3%E5%83%B9" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg2DVD1.jpg" alt="美味代價" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">美味代價</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-3">揭露食品業機械化問題，探討其對健康與農民的衝擊。</p>
+                            <div class="text-[10px] text-gray-400">條碼：V004971</div>
+                            <div class="text-[10px] text-[#DDA63A] font-bold uppercase mt-1">DVD 483 8685 2010</div>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=V009780" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg2DVD2.jpg" alt="美食探源之旅" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">美食探源之旅</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-3">跟隨名廚探訪農地，揭示快速變遷下農民困境與食物鏈真相。</p>
+                            <div class="text-[10px] text-gray-400">條碼：V009780</div>
+                            <div class="text-[10px] text-[#DDA63A] font-bold uppercase mt-1">DVD 427 8697 2022</div>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E9%A3%9F%E5%93%81%E7%A7%91%E5%AD%B82.0" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg2DVD3.jpg" alt="食品科學2.0" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">食品科學 2.0</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-3">超加工食品佔飲食半數，揭示全球飲食科學新發現與健康警訊。</p>
+                            <div class="text-[10px] text-gray-400">條碼：V010097</div>
+                            <div class="text-[10px] text-[#DDA63A] font-bold uppercase mt-1">DVD 463 887 2020</div>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac?q=V009175" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg2DVD4.jpg" alt="糧食競賽" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">糧食競賽</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-3">探討氣候危機下的農業改革，解析新農法如何創造關鍵改變。</p>
+                            <div class="text-[10px] text-gray-400">條碼：V009175</div>
+                            <div class="text-[10px] text-[#DDA63A] font-bold uppercase mt-1">DVD 431.9 8465 2018</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ebooks">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="tablet-smartphone" class="text-[#DDA63A]"></i> 館藏電子書 (E-Books)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.ebook.hyread.com.tw/bookDetail.jsp?id=143976" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg2ebook1.jpg" alt="立志做小的農夫CEO" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">立志做小的農夫CEO</h3>
+                            <p class="text-[10px] text-[#DDA63A] font-bold mb-2">HYREAD</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">呈現有機小農以企業思維經營農園，推動友善環境模式。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/136158" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg2ebook2.jpg" alt="與達爾文共進晚餐" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">與達爾文共進晚餐</h3>
+                            <p class="text-[10px] text-[#DDA63A] font-bold mb-2">UDN讀書館</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">演化視角探索食物起源，揭示人類飲食如何在天擇形成。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/214096" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg2ebook3.jpg" alt="愉園築夢" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">愉園築夢</h3>
+                            <p class="text-[10px] text-[#DDA63A] font-bold mb-2">UDN讀書館</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">記錄十年有機農園實務，是小農入門的實用指南。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/142165" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg2ebook4.jpg" alt="基改世代" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">基改世代</h3>
+                            <p class="text-[10px] text-[#DDA63A] font-bold mb-2">UDN讀書館</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">揭示基因改造技術爭議與應用，成為有知識的自主消費者。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/118815" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg2ebook5.jpg" alt="惜食咪做大嘥鬼" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">惜食咪做大嘥鬼</h3>
+                            <p class="text-[10px] text-[#DDA63A] font-bold mb-2">UDN讀書館</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">首本華人廚餘減廢書，探討政策實務解決方案。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="online-videos">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="clapperboard" class="text-[#DDA63A]"></i> 線上影音資源 (Online Streaming)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/6aa5acd8-344c-432d-bfb6-32717e0b1d09" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg2onvideo1.png" alt="孩子們的菜園農場" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">孩子們的菜園農場</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-3">荷蘭百年校園計畫，從播種到烹飪學習生態技能。</p>
+                            <div class="text-[10px] text-[#DDA63A] font-bold">館藏地：教室電影院公播大平台</div>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/48a6e7b5-000d-4ebb-86bc-56ce6e17bec7" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg2onvideo2.png" alt="白米婦仇大作戰" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">白米婦仇大作戰</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-3">1918年日本米價暴漲引發的運動，呈現糧食正義。</p>
+                            <div class="text-[10px] text-[#DDA63A] font-bold">館藏地：教室電影院公播大平台</div>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/838485fe-5c49-4df2-a340-9f0b80632cfc" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg2onvideo3.png" alt="2040" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">2040</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-3">科技解決方案呈現，描繪氣候改善與潔淨地球願景。</p>
+                            <div class="text-[10px] text-[#DDA63A] font-bold">館藏地：教室電影院公播大平台</div>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/64c695b0-8290-4fe8-9ec5-bf1d930bfe64" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg2onvideo4.png" alt="四季拉麵物語" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">四季拉麵物語</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-3">東京店主人以四季食材料理，展現療癒與慢食文化。</p>
+                            <div class="text-[10px] text-[#DDA63A] font-bold">館藏地：教室電影院公播大平台</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white/50 py-12 text-center text-[10px] tracking-widest">
+         <div class="max-w-7xl mx-auto px-8 text-center text-xs sm:text-sm leading-loose tracking-wide">
+            <p class="font-bold text-base mb-2">新生學校財團法人新生醫護管理專科學校</p>
+            <p>Copyright © 2026 All Rights Reserved.</p>
+            <p>325桃園市龍潭區中豐路高平段418號</p>
+            <p>TEL: (03)411-7578 轉 250 & 251</p>
+            <p>E-Mail: lib@hsc.edu.tw</p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

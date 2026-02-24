@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 5 性別平等 | 圖書館資源策展</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        :root { --sdg-color: #FF3A21; --bg-color: #FDFCF8; }
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: var(--bg-color); color: #2D3748; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .section-title { position: relative; display: inline-block; margin-bottom: 2rem; color: #1a202c; }
+        .section-title::after { content: ''; position: absolute; left: 0; bottom: -8px; width: 60px; height: 4px; background-color: var(--sdg-color); border-radius: 2px; }
+        .resource-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); height: 100%; display: flex; flex-direction: column; }
+        .resource-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 glass-nav" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 text-gray-600 hover:text-[#FF3A21] transition group">
+                <i data-lucide="arrow-left" class="w-5 h-5 group-hover:-translate-x-1 transition"></i>
+                <span class="font-bold">返回總覽</span>
+            </a>
+            <div class="flex items-center gap-2">
+                <img src="sdgs5.jpg" class="w-8 h-8 rounded shadow-sm">
+                <span class="serif font-bold text-xl text-[#FF3A21] hidden md:inline">Gender Equality</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-16 px-6 bg-gradient-to-b from-orange-50 to-[#FDFCF8]">
+        <div class="max-w-5xl mx-auto text-center flex flex-col items-center">
+            <img src="sdgs5.jpg" alt="SDG 5 Icon" class="w-24 h-24 mb-6 rounded-xl shadow-lg border-2 border-white block mx-auto" onerror="this.src='https://open-sdg.github.io/sdg-translations/assets/img/goals/zh-Han/5.png'">
+            
+            <span class="inline-block py-1 px-3 bg-[#FF3A21] text-white text-[10px] font-bold tracking-widest mb-6 rounded-full uppercase tracking-[0.2em]">Goal 5 Exhibition</span>
+            
+            <h1 class="serif text-4xl md:text-6xl font-bold text-gray-900 mb-6 flex items-center justify-center gap-3">
+                <i data-lucide="venus-mars" class="text-[#FF3A21] w-10 h-10 md:w-14 md:h-14"></i>
+                性別平等
+            </h1>
+            
+            <p class="text-lg text-gray-600 font-light max-w-3xl mx-auto leading-relaxed italic opacity-80 flex items-center justify-center gap-2 text-center">
+                <i data-lucide="heart" class="text-[#FF3A21] w-5 h-5 flex-shrink-0"></i>
+                <span>「實現性別平等，並賦予所有女性權力。」</span>
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="space-y-24">
+
+            <section id="intro">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="info" class="text-[#FF3A21]"></i> 指標深度解析
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="font-bold text-lg mb-4 text-[#FF3A21] flex items-center gap-2"><i data-lucide="shield-check"></i> 終止歧視與暴力</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">消除公共及私領域中對女性的所有形式暴力，包括販賣、性剝削及各種有害習俗，如童婚。 </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="font-bold text-lg mb-4 text-[#FF3A21] flex items-center gap-2"><i data-lucide="users"></i> 賦權女性參與</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">確保女性在政治、經濟及公共事務的決策中獲得平等機會，並享有完整的領導權與參與權。</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="font-bold text-lg mb-4 text-[#FF3A21] flex items-center gap-2"><i data-lucide="scale"></i> 家庭與社會平權</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">推動無酬家務的責任分擔，落實社會保護政策，打破職場與校園中的性別刻板印象。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="books">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="book-open-check" class="text-[#FF3A21]"></i> 精選館藏圖書 (Books)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E6%88%92%E6%96%B7%E6%9B%96%E6%98%A7&max=0&view=CONTENT" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg5pap1.jpg" alt="戒斷曖昧" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">戒斷曖昧</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：544.37014 879 2020</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">透過心理學解析40個曖昧迷思，助你破解「愛不了、分不開」的兩性困局。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac?q=%E5%88%86%E6%89%8B%E5%9C%96%E5%AD%98%E8%A8%98" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg5pap2.jpg" alt="分手圖存記" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">分手圖存記</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：544.7 844:3 2006</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">藉由長輩智慧、友誼與自我審視，助你保有自尊走出情傷，優雅重返單身。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E6%8E%B0%E6%8E%B0%E6%88%80%E6%84%9B%E8%85%A6&max=0&view=CONTENT" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg5pap3.jpg" alt="掰掰戀愛腦" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">掰掰戀愛腦</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：544.37 8346:3 2018</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">透過案例解析相處準則與危機處理，助你避開雷區、自我提升並守護愛情。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/203373" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg5pap4.jpg" alt="年齡騷擾" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">年齡騷擾</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：544.5931 8566 2019</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">剖析女性面臨的年齡困境與歧視，倡導打破歲數框架，找回自在自我。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E5%8D%8A%E7%86%9F%E5%A5%B3%E5%A8%83%E5%8D%8A%E7%86%9F%E5%AA%BD" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg5pap5.jpg" alt="半熟女娃半熟媽" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">半熟女娃半熟媽</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：544.141 8837 2014</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">本書記錄不按牌理出牌的幽默育兒與性教育，在愛中構築溫馨家庭。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dvd">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="disc" class="text-[#FF3A21]"></i> DVD 影音館藏 (Audio-Visual)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/203864" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg5DVD1.jpg" alt="隱藏的大明星" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-2">隱藏的大明星</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">少女蒙面追夢衝破父權牢籠，勇敢奪回自由。</p>
+                            <div class="text-[10px] text-[#FF3A21] font-bold uppercase mt-2">DVD 987.83 864 2018</div>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E8%A7%A3%E6%94%BE%E5%A5%B3%E6%80%A7" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg5DVD2.jpg" alt="解放女性" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-2">解放女性</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">Femen裸身對抗父權，紀錄為平權綻放的不凡靈魂。</p>
+                            <div class="text-[10px] text-[#FF3A21] font-bold uppercase mt-2">DVD 544.55 833</div>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E7%94%9F%E7%82%BA%E5%A5%B3%E4%BA%BA&max=&view=CONTENT&level=all&material_type=all&location=" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg5DVD3.jpg" alt="生為女人" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-2">生為女人</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">海倫瑞蒂赴美追夢，覺醒鑄就永恆女權國歌。</p>
+                            <div class="text-[10px] text-[#FF3A21] font-bold uppercase mt-2">DVD 987.83 8437 2021</div>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E5%A5%B3%E6%9C%8B%E5%8F%8B%E7%94%B7%E6%9C%8B%E5%8F%8B" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg5DVD4.jpg" alt="女朋友男朋友" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-2">女朋友男朋友</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">三人橫跨三十年，在學運與現實間演繹難得的自由。</p>
+                            <div class="text-[10px] text-[#FF3A21] font-bold uppercase mt-2">DVD 857.7 8463 2012</div>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E5%A4%B1%E6%A5%AD%E5%A5%B3%E7%8E%8B%E8%81%AF%E7%9B%9F" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg5DVD5.jpg" alt="失業女王聯盟" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-2">失業女王聯盟</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">收起卑微轉向團結，集體抗爭爭取勞動尊嚴。</p>
+                            <div class="text-[10px] text-[#FF3A21] font-bold uppercase mt-2">DVD 987.83 8767 2014</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ebooks">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="tablet-smartphone" class="text-[#FF3A21]"></i> 館藏電子書 (E-Books)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.ebook.hyread.com.tw/bookDetail.jsp?id=218112" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg5ebook1.jpg" alt="不是所有親密關係都叫做愛情" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">不是所有親密關係都叫做愛情</h3>
+                            <p class="text-[10px] text-[#FF3A21] font-bold mb-2">Hyread</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">從困窘失措走向從容，練習在關係中建立健康邊界。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/235752" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg5ebook2.jpg" alt="雖然是女生但開著計程車" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">雖然是女生但開著計程車</h3>
+                            <p class="text-[10px] text-[#FF3A21] font-bold mb-2">UDN讀書館</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">在對話中療癒自我，打破束縛重拾生命成就與自由。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/243169" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg5ebook3.jpg" alt="冒牌獨立" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">冒牌獨立</h3>
+                            <p class="text-[10px] text-[#FF3A21] font-bold mb-2">UDN讀書館</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">傾聽真我並以穩定內在與溝通，構築成熟的關係。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/243744" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg5ebook4.jpg" alt="父親的乖女兒" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">父親的乖女兒</h3>
+                            <p class="text-[10px] text-[#FF3A21] font-bold mb-2">UDN讀書館</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">揭示父女結盟對女性束縛，找回迷失的真實自我。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/231144" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg5ebook5.jpg" alt="女孩的祕密帳號" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">女孩的祕密帳號</h3>
+                            <p class="text-[10px] text-[#FF3A21] font-bold mb-2">UDN讀書館</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">在不公世界中彼此療癒，成就女性覺醒的契機。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="online-videos">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="clapperboard" class="text-[#FF3A21]"></i> 線上影音資源 (Online Streaming)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://www.ezmovie.tw/films/info/5fc6042aca86d" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg5onvideo1.jpg" alt="她們" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80" onerror="this.src='https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=400'">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">她們</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-2">融合作者生平與理想，打破時空限制，活出不受束縛的自我。</p>
+                            <div class="text-[10px] text-[#FF3A21] font-bold">館藏地：K MOVIE</div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/cc6707b2-b5a6-4846-8d2f-f66f4d1034f0" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg5onvideo2.jpg" alt="只有我能喜歡妳" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80" onerror="this.src='https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=400'">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">只有我能喜歡妳</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-2">阿杜傾心天菜小阿姨，從校園到職場一路斬斷桃花，深情守護唯一女神。</p>
+                            <div class="text-[10px] text-[#FF3A21] font-bold">館藏地：教室電影院公播大平台</div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/e7324b70-ac04-44dd-8443-4df3a5a80267" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg5onvideo3.jpg" alt="可不可以，你也剛好喜歡我" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80" onerror="this.src='https://images.unsplash.com/photo-1518131394553-c5509930366b?auto=format&fit=crop&q=80&w=400'">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">可不可以，你也剛好喜歡我</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-2">告白落空反成助攻，少女懷著酸楚協助暗戀對象追友，苦尋剛好的愛。</p>
+                            <div class="text-[10px] text-[#FF3A21] font-bold">館藏地：教室電影院公播大平台</div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/84c2f00c-05fa-4539-b94f-03b18b322aaa" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg5onvideo4.jpg" alt="媽媽不在家：聖誕假期凸槌中" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80" onerror="this.src='https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=400'">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">媽媽不在家：聖誕假期凸槌中</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-2">性別角色掙扎與升遷抉擇拉扯，聖誕之旅讓全家在矛盾中尋回真價值。</p>
+                            <div class="text-[10px] text-[#FF3A21] font-bold">館藏地：教室電影院公播大平台</div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/c67de468-9bef-4dac-807f-471e91504d20" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg5onvideo5.jpg" alt="我吃了那男孩一整年的早餐" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80" onerror="this.src='https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=400'">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">我吃了那男孩一整年的早餐</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3 mb-2">吃貨少女因早餐邂逅學長，在十七歲的迷惘與探索中，共譜成長答案。</p>
+                            <div class="text-[10px] text-[#FF3A21] font-bold">館藏地：教室電影院公播大平台</div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white/50 py-12 text-center text-[10px] tracking-widest">
+         <div class="max-w-7xl mx-auto px-8 text-center text-xs sm:text-sm leading-loose tracking-wide">
+            <p class="font-bold text-base mb-2">新生學校財團法人新生醫護管理專科學校</p>
+            <p>Copyright © 2026 All Rights Reserved.</p>
+            <p>325桃園市龍潭區中豐路高平段418號</p>
+            <p>TEL: (03)411-7578 轉 250 & 251</p>
+            <p>E-Mail: lib@hsc.edu.tw</p>
+        </div>
+    </footer>
+
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

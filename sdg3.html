@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 3 良好健康與福祉 | 圖書館資源策展</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        :root { --sdg-color: #4C9F38; --bg-color: #FDFCF8; }
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: var(--bg-color); color: #2D3748; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .section-title { position: relative; display: inline-block; margin-bottom: 2rem; color: #1a202c; }
+        .section-title::after { content: ''; position: absolute; left: 0; bottom: -8px; width: 60px; height: 4px; background-color: var(--sdg-color); border-radius: 2px; }
+        .resource-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); height: 100%; display: flex; flex-direction: column; }
+        .resource-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 glass-nav" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 text-gray-600 hover:text-[#4C9F38] transition group">
+                <i data-lucide="arrow-left" class="w-5 h-5 group-hover:-translate-x-1 transition"></i>
+                <span class="font-bold">返回總覽</span>
+            </a>
+            <div class="flex items-center gap-2">
+                <img src="sdgs3.jpg" class="w-8 h-8 rounded shadow-sm">
+                <span class="serif font-bold text-xl text-[#4C9F38] hidden md:inline">Good Health and Well-being</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-16 px-6 bg-gradient-to-b from-green-50 to-[#FDFCF8]">
+        <div class="max-w-5xl mx-auto text-center">
+            <img src="sdgs3.jpg" alt="SDG 3 Icon" class="w-24 h-24 mb-6 rounded-xl shadow-lg border-2 border-white block mx-auto" onerror="this.src='https://open-sdg.github.io/sdg-translations/assets/img/goals/zh-Han/3.png'">
+            
+            <span class="inline-block py-1 px-3 bg-[#4C9F38] text-white text-[10px] font-bold tracking-widest mb-6 rounded-full uppercase tracking-[0.2em]">Goal 3 Exhibition</span>
+            
+            <h1 class="serif text-4xl md:text-6xl font-bold text-gray-900 mb-6 flex items-center justify-center gap-3">
+                <i data-lucide="heart-pulse" class="text-[#4C9F38] w-10 h-10 md:w-14 md:h-14"></i>
+                良好健康與福祉
+            </h1>
+            
+            <p class="text-lg text-gray-600 font-light max-w-3xl mx-auto leading-relaxed italic opacity-80 flex items-center justify-center gap-2">
+                <i data-lucide="sparkles" class="text-[#4C9F38] w-5 h-5"></i>
+                「確保健康的生活方式，促進各年齡層所有人的福祉。」
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="space-y-24">
+
+            <section id="intro">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="info" class="text-[#4C9F38]"></i> 指標深度解析
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="font-bold text-lg mb-4 text-[#4C9F38] flex items-center gap-2"><i data-lucide="activity"></i> 全球公共衛生</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">致力於降低孕產婦死亡率，消除傳染病，並加強對慢性病的防治與心理健康支持。</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="font-bold text-lg mb-4 text-[#4C9F38] flex items-center gap-2"><i data-lucide="stethoscope"></i> 醫護專業使命</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">培養具備全人照護能力的專業人才，確保所有人都能獲得公平且高品質的醫療。</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="font-bold text-lg mb-4 text-[#4C9F38] flex items-center gap-2"><i data-lucide="smile"></i> 身心平衡發展</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">福祉不僅是身體無病，更包含心理韌性。推動健康生活型態與壓力管理。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="books">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="book-open" class="text-[#4C9F38]"></i> 精選館藏圖書 (Books)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/218565" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg3pap1.jpg" alt="簡單豐足" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=400'">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">簡單豐足</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：411.1 8374 2020</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">匯集藏印醫學精華助您成為健康的上醫。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/207774" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg3pap2.jpg" alt="無聲的抗議" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&q=80&w=400'">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">無聲的抗議</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：173.2 8776 2020</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">透析十類青少年心理癥結與破解困擾。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E4%B8%8A%E7%8F%AD%E4%B8%8D%E5%86%8D%E5%BF%83%E5%A5%BD%E7%B4%AF" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg3pap3.jpg" alt="上班不再心好累" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=400'">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">上班不再心好累</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：494.35 8443 2023</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">正念練習助您深度覺察自我調節壓力。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/211538" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg3pap4.jpg" alt="不逃跑的陪伴" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=400'">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">不逃跑的陪伴</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：419.71 8665 2023</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">放下執著，共度照護難關經驗分享。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/201153" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg3pap5.jpg" alt="讓生命微笑的智慧處方" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?auto=format&fit=crop&q=80&w=400'">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">讓生命微笑的智慧處方</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：411.1 8667 2017</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">土耳其健康法讓好情緒成為身心指南針。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dvd">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="disc" class="text-[#4C9F38]"></i> DVD 影音館藏 (Audio-Visual)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/116570" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg3DVD1.jpg" alt="潘懷宗健康隨書聽" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">潘懷宗健康隨書聽</h3>
+                            <p class="text-[11px] text-gray-500 mb-2">警惕成癮與化學殺手，守護健康。</p>
+                            <div class="text-[10px] text-[#4C9F38] font-bold uppercase">DVD 411.1 8362 V.1-V.8</div>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/208849" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg3DVD2.jpg" alt="前進超高齡社會" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">前進超高齡社會</h3>
+                            <p class="text-[11px] text-gray-500 mb-2">推動預防醫學，強化全齡共融連結。</p>
+                            <div class="text-[10px] text-[#4C9F38] font-bold uppercase">DVD 544.81 8494 V.1-V.2</div>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/218167?location=0&q=%E4%BA%BA%E7%94%9F%E4%B8%8B%E5%8D%8A%E5%A0%B4&start=0&view=CONTENT" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg3DVD3.jpg" alt="人生下半場" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">人生下半場</h3>
+                            <p class="text-[11px] text-gray-500 mb-2">熟齡網紅追夢，透過跨代共居與大齡食堂實踐互助，讓長者老有所用。</p>
+                            <div class="text-[10px] text-[#4C9F38] font-bold uppercase">DVD 544.8 8454:2</div>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E5%B0%91%E5%B9%B4%E7%B6%AD%E7%89%B9%E7%9A%84%E5%AD%A4%E7%8D%A8&max=&view=CONTENT&level=all&material_type=all&location=" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg3DVD4.jpg" alt="少年維特的孤獨" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">少年維特的孤獨</h3>
+                            <p class="text-[11px] text-gray-500 mb-2">以破碎家庭為引，譜寫孤獨與獨立的青春頌歌，對話青少年成長心路。</p>
+                            <div class="text-[10px] text-[#4C9F38] font-bold uppercase">DVD 544.67 824</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ebooks">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="tablet-smartphone" class="text-[#4C9F38]"></i> 館藏電子書 (E-Books)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/235063" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg3ebook1.jpg" alt="不生病的藏傳壓術" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">不生病的藏傳壓術</h3>
+                            <p class="text-[10px] text-[#4C9F38] font-bold mb-2">UDN電子書</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/246346" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg3ebook2.jpg" alt="全宇宙最好的座位" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">全宇宙最好的座位</h3>
+                            <p class="text-[10px] text-[#4C9F38] font-bold mb-2">UDN電子書</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/231831" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg3ebook3.jpg" alt="健康公平與自由" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">健康公平與自由</h3>
+                            <p class="text-[10px] text-[#4C9F38] font-bold mb-2">UDN電子書</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/219462" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg3ebook4.jpg" alt="生命關鍵健康永續" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">生命關鍵健康永續</h3>
+                            <p class="text-[10px] text-[#4C9F38] font-bold mb-2">UDN電子書</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/157894" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg3ebook5.jpg" alt="不被遺忘的時光" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">不被遺忘的時光</h3>
+                            <p class="text-[10px] text-[#4C9F38] font-bold mb-2">UDN電子書</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="online-videos">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="clapperboard" class="text-[#4C9F38]"></i> 線上影音資源 (Online Streaming)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/cdd82f35-32d8-443c-948f-b3a916e94f84" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg3onvideo1.jpg" alt="逆著風的旅行" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">逆著風的旅行</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">痲瘋康復者跨沙漠公路尋根覓家。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/9f6b3223-1413-4949-a493-57e443ad793d" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg3onvideo2.jpg" alt="時光髮廊" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">時光髮廊</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">陪伴失智外婆過程中重新發現愛。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/fc6824a7-7d75-4090-b1f0-f7ee8a64fe1a" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg3onvideo3.jpg" alt="了不起的老爸" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">了不起的老爸</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">患疾少年與父親用愛向陽而生。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://www.ezmovie.tw/films/info/61920c74081f9" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg3onvideo4.jpg" alt="活在當下" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">活在當下</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">突破框架找回生命純粹動力。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white/50 py-12 text-center text-[10px] tracking-widest">
+        <div class="max-w-7xl mx-auto px-8 text-center text-xs sm:text-sm leading-loose tracking-wide">
+            <p class="font-bold text-base mb-2">新生學校財團法人新生醫護管理專科學校</p>
+            <p>Copyright © 2026 All Rights Reserved.</p>
+            <p>325桃園市龍潭區中豐路高平段418號</p>
+            <p>TEL: (03)411-7578 轉 250 & 251</p>
+            <p>E-Mail: lib@hsc.edu.tw</p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 4 優質教育 | 圖書館資源策展</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        :root { --sdg-color: #C5192D; --bg-color: #FDFCF8; }
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: var(--bg-color); color: #2D3748; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .section-title { position: relative; display: inline-block; margin-bottom: 2rem; color: #1a202c; }
+        .section-title::after { content: ''; position: absolute; left: 0; bottom: -8px; width: 60px; height: 4px; background-color: var(--sdg-color); border-radius: 2px; }
+        .resource-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); height: 100%; display: flex; flex-direction: column; }
+        .resource-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 glass-nav" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 text-gray-600 hover:text-[#C5192D] transition group">
+                <i data-lucide="arrow-left" class="w-5 h-5 group-hover:-translate-x-1 transition"></i>
+                <span class="font-bold">返回總覽</span>
+            </a>
+            <div class="flex items-center gap-2">
+                <img src="sdgs4.jpg" class="w-8 h-8 rounded shadow-sm">
+                <span class="serif font-bold text-xl text-[#C5192D] hidden md:inline">Quality Education</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-16 px-6 bg-gradient-to-b from-red-50 to-[#FDFCF8]">
+        <div class="max-w-5xl mx-auto text-center">
+            <img src="sdgs4.jpg" alt="SDG 4 Icon" class="w-24 h-24 mb-6 rounded-xl shadow-lg border-2 border-white block mx-auto" onerror="this.src='https://open-sdg.github.io/sdg-translations/assets/img/goals/zh-Han/4.png'">
+            
+            <span class="inline-block py-1 px-3 bg-[#C5192D] text-white text-[10px] font-bold tracking-widest mb-6 rounded-full uppercase tracking-[0.2em]">Goal 4 Exhibition</span>
+            
+            <h1 class="serif text-4xl md:text-6xl font-bold text-gray-900 mb-6 flex items-center justify-center gap-3">
+                <i data-lucide="graduation-cap" class="text-[#C5192D] w-10 h-10 md:w-14 md:h-14"></i>
+                優質教育
+            </h1>
+            
+            <p class="text-lg text-gray-600 font-light max-w-3xl mx-auto leading-relaxed italic opacity-80 flex items-center justify-center gap-2">
+                <i data-lucide="sparkles" class="text-[#C5192D] w-5 h-5"></i>
+                「確保包容和公平的優質教育，讓每個人都能獲得終身學習的機會。」
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="space-y-24">
+
+            <section id="intro">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="info" class="text-[#C5192D]"></i> 指標深度解析
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="font-bold text-lg mb-4 text-[#C5192D] flex items-center gap-2"><i data-lucide="book-open"></i> 教育公平性</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">消除教育資源的城鄉差距，確保身心障礙者、弱勢境遇兒童都能平等接受各階層教育與職業訓練。</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="font-bold text-lg mb-4 text-[#C5192D] flex items-center gap-2"><i data-lucide="users-2"></i> 終身學習力</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">建立持續更新專業技能的能力，以適應快速變遷的社會需求，讓學習不侷限於校園空間。</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="font-bold text-lg mb-4 text-[#C5192D] flex items-center gap-2"><i data-lucide="globe"></i> 全球公民意識</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">培養具備永續發展、人權、性別平等意識的人才，厚植解決全球挑戰的軟實力。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="books">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="book-open-check" class="text-[#C5192D]"></i> 精選館藏圖書 (Books)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac?q=A087108" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg4pap1.png" alt="用英文繪本讀出孩子的素養力" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">用英文繪本讀出孩子的素養力</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：523.23 8735 2022</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">繪本結合多元議題，讓語言學習與全人發展同步進行。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=A087208&max=0&view=CONTENT" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg4pap2.png" alt="引導孩子說出內心話" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">引導孩子說出內心話</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：528.21 847 2021</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">傳授穩定自我情緒心法，探索孩子內心世界並點燃改變決心。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac?q=%E5%BE%9E%E8%81%BD%E6%95%85%E4%BA%8B%E5%88%B0%E9%96%B1%E8%AE%80" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg4pap3.png" alt="從聽故事到閱讀" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">從聽故事到閱讀</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：523.1 8469 2018</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">分享親子共讀與閱讀技巧，打造溫暖美好的閱讀時光。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=%E6%92%9E%E7%89%86%E6%95%99%E9%A4%8A%E5%AD%B8" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg4pap4.png" alt="撞牆教養學" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">撞牆教養學</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：528.2 8335 2019</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">看見孩子的心聲，減少衝突摩擦並走過教養撞牆期。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=A084871" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg4pap5.png" alt="教室裡的對話練習" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">教室裡的對話練習</h3>
+                            <p class="text-[10px] text-gray-400 mb-2">索書號：521.4 8762 2019</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">結合薩提爾與冰山對話，幫助教師自我成長並提升教學品質。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dvd">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="disc" class="text-[#C5192D]"></i> DVD 影音館藏 (Audio-Visual)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac?q=V007882" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg4DVD1.png" alt="中國文學:從文言到白話" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-2">中國文學:從文言到白話</h3>
+                            <div class="text-[10px] text-[#C5192D] font-bold mt-2">V007882-V007888</div>
+                             <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">精選徐志摩、胡適、魯迅等名家名作，並以張愛玲總結中國文學精粹。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=V007831" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg4DVD2.jpg" alt="孔夫子大學堂" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">孔夫子大學堂</h3>
+                            <div class="text-[10px] text-[#C5192D] font-bold mt-2">V007831-V007832</div>
+                             <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">張曼娟引導領略孔子與弟子對話，從故事滋養品格，學習自在相處做君子。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=V007868" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg4DVD3.png" alt="中國文學:從詩經到唐詩" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">中國文學:從詩經到唐詩</h3>
+                            <div class="text-[10px] text-[#C5192D] font-bold mt-2">V007868-V007874</div>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">將古老文字還原成有溫度、有呼吸的「民歌」，引領領略唐詩璀璨世界。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=V004874" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg4DVD4.jpg" alt="從零歲出發" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">從零歲出發</h3>
+                            <div class="text-[10px] text-[#C5192D] font-bold mt-2">V004874</div>
+                             <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">規畫0-3歲課程，涵蓋身心發展與蒙特梭利教育精神。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="http://163.25.34.60:8080/toread/opac/search?q=V007825" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="sdg4DVD5.png" alt="張曼娟大人的寓言 II" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">張曼娟大人的寓言 II</h3>
+                            <div class="text-[10px] text-[#C5192D] font-bold mt-2">V007825-V007830</div>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">重詮經典轉為現代寓言，助成人領悟處世智慧。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ebooks">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="tablet-smartphone" class="text-[#C5192D]"></i> 館藏電子書 (E-Books)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.ebook.hyread.com.tw/bookDetail.jsp?id=144912" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg4ebook1.jpg" alt="從大腦看人生" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80&w=400'">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">從大腦看人生</h3>
+                            <p class="text-[10px] text-[#C5192D] font-bold mb-2">Hyread</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">以腦科學實驗為基石，強調終身學習的重要性。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.ebook.hyread.com.tw/bookDetail.jsp?id=124894" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg4ebook2.jpg" alt="刻意練習" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=400'">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">刻意練習</h3>
+                            <p class="text-[10px] text-[#C5192D] font-bold mb-2">Hyread</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">打破天賦迷思，助師長營造環境設定目標累積專業。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.ebook.hyread.com.tw/bookDetail.jsp?id=100500" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg4ebook3.jpg" alt="你鬧什麼脾氣啊" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&q=80&w=400'">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">你鬧什麼脾氣啊</h3>
+                            <p class="text-[10px] text-[#C5192D] font-bold mb-2">Hyread</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">引導情緒表達教導溝通，將衝動轉化為配合力。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/246197" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg4ebook4.jpg" alt="把經濟學剝光光" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&q=80&w=400'">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">把經濟學剝光光</h3>
+                            <p class="text-[10px] text-[#C5192D] font-bold mb-2">UDN電子書</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">從日常選擇解析誘因，破解術語洞察生活的經濟學。</p>
+                        </div>
+                    </div>
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://reading.udn.com/udnlib/hsc/B/210184" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="sdg4ebook5.jpg" alt="洪蘭老師談教養學習" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=400'">
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">洪蘭老師談教養學習</h3>
+                            <p class="text-[10px] text-[#C5192D] font-bold mb-2">UDN電子書</p>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">以腦科學實驗結合36堂課，助父母因材施教。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="online-videos">
+                <h2 class="serif text-3xl font-bold section-title flex items-center gap-3">
+                    <i data-lucide="clapperboard" class="text-[#C5192D]"></i> 線上影音資源 (Online Streaming)
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/2039877a-336a-419b-837a-e4e34aa5de4c" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg4onvideo1.jpg" alt="布拉姆的異想世界" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80" onerror="this.src='https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=400'">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">布拉姆的異想世界</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">想像力男孩與重規則老師的觀點差異與理解平衡。</p>
+                            <div class="text-[10px] text-[#C5192D] font-bold">館藏地：教室電影公播大平台</div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/748e0593-70df-45d7-b4e9-0ae2225e5bf3" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg4onvideo2.jpg" alt="不丹是教室" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80" onerror="this.src='https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&q=80&w=400'">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">不丹是教室</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">偏鄉教師在資源匱乏中找回教育價值與面臨去留抉擇。</p>
+                            <div class="text-[10px] text-[#C5192D] font-bold">館藏地：教室電影公播大平台</div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/b9fc5870-76d9-42a1-8807-5a49ef77d39d" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg4onvideo3.jpg" alt="小地球大夢想" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80" onerror="this.src='https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=400'">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">小地球大夢想</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">梅拉蒂與全球青年為人權與環境奮鬥，勇於發聲並克服困難，改變世界現況。</p>
+                            <div class="text-[10px] text-[#C5192D] font-bold">館藏地：教室電影公播大平台</div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/69c0d2f0-a632-47db-8cee-c21a0c651c84" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg4onvideo4.jpg" alt="廢校大作戰" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80" onerror="this.src='https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=400'">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">廢校大作戰</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">師生攜手打造綠色學校，克服現實阻礙展現生命價值。</p>
+                            <div class="text-[10px] text-[#C5192D] font-bold">館藏地：教室電影公播大平台</div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
+                        <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/3db75484-29fd-489c-8a7a-99aa8a9d15bc" target="_blank" class="block bg-gray-900 h-44 flex items-center justify-center overflow-hidden relative">
+                            <img src="sdg4onvideo5.jpg" alt="瀑布" class="h-full object-contain p-0 group-hover:scale-110 transition duration-500 opacity-80" onerror="this.src='https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=400'">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-full p-2 text-white border border-white/50"><i data-lucide="play" class="fill-current w-6 h-6"></i></div>
+                            </div>
+                        </a>
+                        <div class="p-4 border-t border-gray-50 flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-2">瀑布</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">藥物穩住病理，理解連結彼此；在餘生中以愛與接納，解開生命亂結。 </p>
+                            <div class="text-[10px] text-[#C5192D] font-bold">館藏地：教室電影公播大平台</div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white/50 py-12 text-center text-[10px] tracking-widest">
+         <div class="max-w-7xl mx-auto px-8 text-center text-xs sm:text-sm leading-loose tracking-wide">
+            <p class="font-bold text-base mb-2">新生學校財團法人新生醫護管理專科學校</p>
+            <p>Copyright © 2026 All Rights Reserved.</p>
+            <p>325桃園市龍潭區中豐路高平段418號</p>
+            <p>TEL: (03)411-7578 轉 250 & 251</p>
+            <p>E-Mail: lib@hsc.edu.tw</p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

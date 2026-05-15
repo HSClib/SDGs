@@ -175,8 +175,10 @@
 
         for (let i = 1; i <= 17; i++) {
             const link = document.createElement('a');
-            // 已修正：將條件改為 i <= 6，使其包含指標 6 的連結
-            if (i <= 6) { link.href = `sdg${i}.html`; } 
+            // 已更新判定條件：將 i <= 6 修改為 i <= 7
+            if (i <= 7) { 
+                link.href = `sdg${i}.html`; 
+            } 
             else {
                 link.href = "#";
                 link.onclick = (e) => {
@@ -198,25 +200,5 @@
             container.appendChild(link);
         }
     </script>
-    <script>
- window.difyChatbotConfig = {
-  token: 'Yw0PAajLZCR8FThS',
-  inputs: {
-    // You can define the inputs from the Start node here
-    // key is the variable name
-    // e.g.
-    // name: "NAME"
-  },
-  systemVariables: {
-    // user_id: 'YOU CAN DEFINE USER ID HERE',
-    // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
-  },
-  userVariables: {
-    // avatar_url: 'YOU CAN DEFINE USER AVATAR URL HERE',
-    // name: 'YOU CAN DEFINE USER NAME HERE',
-  },
- }
-</script>
 </body>
 </html>
-

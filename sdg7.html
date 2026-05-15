@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 7 可負擔的潔淨能源 | 新生醫專資源策展</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        /* SDG 7 官方顏色：#FDB713 */
+        :root { --sdg-color: #FDB713; }
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: #FDFCF8; color: #2D3748; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .section-title { position: relative; display: inline-block; margin-bottom: 2rem; }
+        .section-title::after { content: ''; position: absolute; left: 0; bottom: -8px; width: 60px; height: 4px; background-color: var(--sdg-color); border-radius: 2px; }
+        .resource-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); height: 100%; display: flex; flex-direction: column; }
+        .resource-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 glass-nav py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-1 font-bold text-gray-600 hover:text-[#FDB713] transition">
+                <i data-lucide="arrow-left" class="w-5 h-5"></i> 返回總覽
+            </a>
+            <div class="flex items-center gap-2">
+                <img src="sdgs7.jpg" class="w-8 h-8 rounded shadow-sm">
+                <span class="font-bold text-[#FDB713] serif">Affordable & Clean Energy</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-16 text-center bg-yellow-50 border-b border-yellow-100">
+        <img src="sdgs7.jpg" class="w-24 mx-auto mb-4 rounded-xl shadow-lg border-2 border-white">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 flex justify-center items-center gap-3">
+            <i data-lucide="zap" class="text-[#FDB713]"></i> 可負擔的潔淨能源
+        </h1>
+        <p class="italic text-gray-500 max-w-2xl mx-auto px-6">「確保所有的人都可取得負擔得起、可靠、永續及現代的能源。」</p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 space-y-24">
+
+        <section id="intro">
+            <h2 class="text-2xl font-bold section-title"><i data-lucide="info" class="inline mr-2 text-[#FDB713]"></i>指標深度解析</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-lg mb-4 text-[#FDB713] flex items-center gap-2"><i data-lucide="sun"></i> 普及能源服務</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">在 2030 年以前，確保所有人都能取得負擔得起、可靠且現代的能源服務。</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-lg mb-4 text-[#FDB713] flex items-center gap-2"><i data-lucide="battery-charging"></i> 提高再生能源比例</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">大幅提高全球能源結構中，再生能源的使用占比，減少對化石燃料的依賴。</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-lg mb-4 text-[#FDB713] flex items-center gap-2"><i data-lucide="gauge"></i> 加倍能源效率</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">透過科技研發與基礎設施升級，使全球能源效率的改善率翻倍。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="books">
+            <h2 class="text-2xl font-bold section-title"><i data-lucide="book-open" class="inline mr-2 text-[#FDB713]"></i>精選館藏圖書 (Books)</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div class="resource-card bg-white border rounded-xl overflow-hidden shadow-sm flex flex-col group">
+                    <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/203503" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                        <img src="sdg7pap1.jpg" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" alt="綠色能源與永續發展">
+                    </a>
+                    <div class="p-4 border-t border-gray-50 flex-grow">
+                        <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">綠色能源與永續發展</h3>
+                        <p class="text-[10px] text-gray-400 mb-2">索書號：400.15 8764 2018</p>
+                        <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">探索綠能轉型關鍵，以潔淨動力驅動經濟增長，實踐人與自然共好的未來。</p>
+                        <div class="mt-2 text-[9px] bg-yellow-50 text-[#FDB713] px-2 py-0.5 rounded inline-block font-bold">條碼：A082885</div>
+                    </div>
+                </div>
+                <div class="resource-card bg-white border rounded-xl overflow-hidden shadow-sm flex flex-col group">
+                    <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/127994" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                        <img src="sdg7pap2.jpg" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" alt="臺灣.能.革命">
+                    </a>
+                    <div class="p-4 border-t border-gray-50 flex-grow">
+                        <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">臺灣.能.革命</h3>
+                        <p class="text-[10px] text-gray-400 mb-2">索書號：554.68 855 2014</p>
+                        <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">立足地質現況並反思核電風險，推動社區綠能以開創自主永續未來。</p>
+                        <div class="mt-2 text-[9px] bg-yellow-50 text-[#FDB713] px-2 py-0.5 rounded inline-block font-bold">條碼：A074732</div>
+                    </div>
+                </div>
+                <div class="resource-card bg-white border rounded-xl overflow-hidden shadow-sm flex flex-col group">
+                    <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/114286" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                        <img src="sdg7pap3.jpg" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" alt="能源-運用及環境">
+                    </a>
+                    <div class="p-4 border-t border-gray-50 flex-grow">
+                        <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">能源-運用及環境</h3>
+                        <p class="text-[10px] text-gray-400 mb-2">索書號：400.15 8455 2013</p>
+                        <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">結合物理原理剖析能源運用，平衡資源消耗並致力於環境永續轉型。</p>
+                        <div class="mt-2 text-[9px] bg-yellow-50 text-[#FDB713] px-2 py-0.5 rounded inline-block font-bold">條碼：A070158</div>
+                    </div>
+                </div>
+                <div class="resource-card bg-white border rounded-xl overflow-hidden shadow-sm flex flex-col group">
+                    <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/115830" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                        <img src="sdg7pap4.jpg" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" alt="風和日麗的背後">
+                    </a>
+                    <div class="p-4 border-t border-gray-50 flex-grow">
+                        <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">風和日麗的背後</h3>
+                        <p class="text-[10px] text-gray-400 mb-2">索書號：554.61 8677 2013</p>
+                        <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">剖析水資源治理的科技侷限，透過災難反思重構人與自然的永續關係。</p>
+                        <div class="mt-2 text-[9px] bg-yellow-50 text-[#FDB713] px-2 py-0.5 rounded inline-block font-bold">條碼：A072175</div>
+                    </div>
+                </div>
+                <div class="resource-card bg-white border rounded-xl overflow-hidden shadow-sm flex flex-col group">
+                    <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/211074" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                        <img src="sdg7pap5.jpg" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" alt="綠色能源">
+                    </a>
+                    <div class="p-4 border-t border-gray-50 flex-grow">
+                        <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">綠色能源</h3>
+                        <p class="text-[10px] text-gray-400 mb-2">索書號：337.42 8353 2022</p>
+                        <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">系統性論述再生能源技術與節能策略，提供能源轉型的專業實務指引。</p>
+                        <div class="mt-2 text-[9px] bg-yellow-50 text-[#FDB713] px-2 py-0.5 rounded inline-block font-bold">條碼：A089286</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dvd">
+            <h2 class="text-2xl font-bold section-title"><i data-lucide="disc" class="inline mr-2 text-[#FDB713]"></i>DVD 影音館藏 (Audio-Visual)</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div class="resource-card bg-white border rounded-xl overflow-hidden shadow-sm flex flex-col group text-center">
+                    <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/206888" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                        <img src="sdg7DVD1.png" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" alt="燃油啟示錄">
+                    </a>
+                    <div class="p-4 border-t border-gray-50 flex-grow">
+                        <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-1">燃油啟示錄</h3>
+                        <p class="text-[10px] text-[#FDB713] font-bold mb-1">索書號：DVD 457.01 8953 2012</p>
+                        <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">反思全球對石油的依賴與危機，積極尋求生質能源轉型的永續路徑。</p>
+                        <div class="mt-3 text-[9px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded inline-block">條碼：V009168</div>
+                    </div>
+                </div>
+                <div class="resource-card bg-white border rounded-xl overflow-hidden shadow-sm flex flex-col group text-center">
+                    <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/127249" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                        <img src="sdg7DVD2.png" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" alt="能源與社會改革">
+                    </a>
+                    <div class="p-4 border-t border-gray-50 flex-grow">
+                        <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-1">能源與社會改革</h3>
+                        <p class="text-[10px] text-[#FDB713] font-bold mb-1">索書號：DVD 400.15 8955 2014</p>
+                        <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">記錄綠能賦予社區的轉型力量，展現人民推動能源民主的改革進程。</p>
+                        <div class="mt-3 text-[9px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded inline-block">條碼：V006779</div>
+                    </div>
+                </div>
+                <div class="resource-card bg-white border rounded-xl overflow-hidden shadow-sm flex flex-col group text-center">
+                    <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/208429" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                        <img src="sdg7DVD3.png" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" alt="綠能趨勢">
+                    </a>
+                    <div class="p-4 border-t border-gray-50 flex-grow">
+                        <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-1">綠能趨勢</h3>
+                        <p class="text-[10px] text-[#FDB713] font-bold mb-1">索書號：DVD 400.15 8457 2021</p>
+                        <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">掌握全球能源轉型趨勢，剖析再生能源技術以預見綠色經濟新未來。</p>
+                        <div class="mt-3 text-[9px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded inline-block">條碼：V009532</div>
+                    </div>
+                </div>
+                <div class="resource-card bg-white border rounded-xl overflow-hidden shadow-sm flex flex-col group text-center">
+                    <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/183670" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                        <img src="sdg7DVD4.png" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" alt="能源告急">
+                    </a>
+                    <div class="p-4 border-t border-gray-50 flex-grow">
+                        <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-1">能源告急</h3>
+                        <p class="text-[10px] text-[#FDB713] font-bold mb-1">索書號：DVD 554.68 8894 2015</p>
+                        <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">深度解構再生能源利弊與能源權力，省思核災後永續經營的未來路徑。</p>
+                        <div class="mt-3 text-[9px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded inline-block">條碼：V007151</div>
+                    </div>
+                </div>
+                <div class="resource-card bg-white border rounded-xl overflow-hidden shadow-sm flex flex-col group text-center">
+                    <a href="http://163.25.34.60:8080/toread/opac/bibliographic_view/209800" target="_blank" class="block bg-gray-50 h-44 flex items-center justify-center overflow-hidden">
+                        <img src="sdg7DVD5.png" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" alt="風能">
+                    </a>
+                    <div class="p-4 border-t border-gray-50 flex-grow">
+                        <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-1">風能</h3>
+                        <p class="text-[10px] text-[#FDB713] font-bold mb-1">索書號：DVD 448.165 857 2020</p>
+                        <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">解析風力發電原理，展示其應對氣候危機的潛力，將自然之風轉化為無限綠能。</p>
+                        <div class="mt-3 text-[9px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded inline-block">條碼：V009714</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ebooks">
+            <h2 class="text-2xl font-bold section-title"><i data-lucide="tablet-smartphone" class="inline mr-2 text-[#FDB713]"></i>館藏電子書 (E-Books)</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div class="resource-card bg-white border rounded-xl overflow-hidden shadow-sm flex flex-col group text-center">
+                    <a href="https://reading.udn.com/udnlib/hsc/B/240510" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                        <img src="sdg7ebook1.jpg" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" alt="綠色能源科技">
+                    </a>
+                    <div class="p-4 border-t border-gray-50 flex-grow">
+                        <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-1">綠色能源科技</h3>
+                        <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">深度解構再生能源技術與核能利弊，從歷史經驗探尋能源轉型關鍵。</p>
+                        <div class="mt-3 text-[10px] font-bold text-[#FDB713]">館藏地：UDN 讀書館</div>
+                    </div>
+                </div>
+                <div class="resource-card bg-white border rounded-xl overflow-hidden shadow-sm flex flex-col group text-center">
+                    <a href="https://reading.udn.com/udnlib/hsc/B/223186" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                        <img src="sdg7ebook2.jpg" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" alt="探索未來的動力源">
+                    </a>
+                    <div class="p-4 border-t border-gray-50 flex-grow">
+                        <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-1">探索未來的動力源</h3>
+                        <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">系統解析多元能源技術與利弊，全面掌握能源開發現狀與綠色轉型趨勢。</p>
+                        <div class="mt-3 text-[10px] font-bold text-[#FDB713]">館藏地：UDN 讀書館</div>
+                    </div>
+                </div>
+                <div class="resource-card bg-white border rounded-xl overflow-hidden shadow-sm flex flex-col group text-center">
+                    <a href="https://reading.udn.com/udnlib/hsc/B/223234" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                        <img src="sdg7ebook3.jpg" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" alt="永續核能">
+                    </a>
+                    <div class="p-4 border-t border-gray-50 flex-grow">
+                        <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-1">永續核能</h3>
+                        <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">綜覽核技術百年演進與多元應用，深度剖析核安全與智慧化轉型趨勢。</p>
+                        <div class="mt-3 text-[10px] font-bold text-[#FDB713]">館藏地：UDN 讀書館</div>
+                    </div>
+                </div>
+                <div class="resource-card bg-white border rounded-xl overflow-hidden shadow-sm flex flex-col group text-center">
+                    <a href="https://reading.udn.com/udnlib/hsc/B/144430" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                        <img src="sdg7ebook4.jpg" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" alt="日常生活的能源革命">
+                    </a>
+                    <div class="p-4 border-t border-gray-50 flex-grow">
+                        <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-1">日常生活的能源革命</h3>
+                        <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">以系統性思考解析能源結構，結合在地案例開啟理性轉型的全民對話。</p>
+                        <div class="mt-3 text-[10px] font-bold text-[#FDB713]">館藏地：UDN 讀書館</div>
+                    </div>
+                </div>
+                <div class="resource-card bg-white border rounded-xl overflow-hidden shadow-sm flex flex-col group text-center">
+                    <a href="https://reading.udn.com/udnlib/hsc/B/237010" target="_blank" class="block bg-gray-50 h-48 flex items-center justify-center overflow-hidden">
+                        <img src="sdg7ebook5.jpg" class="h-full object-contain p-2 group-hover:scale-110 transition duration-500" alt="太陽底下無難事">
+                    </a>
+                    <div class="p-4 border-t border-gray-50 flex-grow">
+                        <h3 class="font-bold text-gray-800 text-sm mb-2 line-clamp-1">太陽底下無難事</h3>
+                        <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-3">記錄從實驗室到屋頂的創業旅程，看見二十五年光電夢想如何落地實踐。</p>
+                        <div class="mt-3 text-[10px] font-bold text-[#FDB713]">館藏地：UDN 讀書館</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="streaming">
+            <h2 class="text-2xl font-bold section-title"><i data-lucide="clapperboard" class="inline mr-2 text-[#FDB713]"></i>線上影音資源 (Online Streaming)</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="resource-card bg-white border rounded-2xl overflow-hidden shadow-sm flex flex-col group">
+                    <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/a2c6847a-2e69-4403-a6c7-b253e1918665" target="_blank">
+                        <div class="bg-[#1a1c23] aspect-video flex items-center justify-center relative overflow-hidden">
+                            <img src="sdg7onvideo1.jpg" class="h-full object-contain group-hover:scale-105 transition duration-500" alt="森林特攻隊">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30 group-hover:bg-white/40 transition">
+                                    <i data-lucide="play" class="text-white fill-current w-6 h-6 ml-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">森林特攻隊：大腳ㄚ家族</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-2">大腳怪家族聯手揭發石油公司陰謀，守護動物棲地並實踐環保正義。</p>
+                            <div class="mt-3 text-[10px] font-bold text-[#FDB713]">館藏地：教室電影院公佈大平台</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="resource-card bg-white border rounded-2xl overflow-hidden shadow-sm flex flex-col group">
+                    <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/d5312b3d-dabe-4fac-ba9b-97361292b43a" target="_blank">
+                        <div class="bg-[#1a1c23] aspect-video flex items-center justify-center relative overflow-hidden">
+                            <img src="sdg7onvideo2.jpg" class="h-full object-contain group-hover:scale-105 transition duration-500" alt="進擊的大媽">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30 group-hover:bg-white/40 transition">
+                                    <i data-lucide="play" class="text-white fill-current w-6 h-6 ml-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">進擊的大媽</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-2">環保鬥士孤身對抗鋁業破壞，在守護家園與圓夢母職間展開最終一戰。</p>
+                            <div class="mt-3 text-[10px] font-bold text-[#FDB713]">館藏地：教室電影院公佈大平台</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="resource-card bg-white border rounded-2xl overflow-hidden shadow-sm flex flex-col group">
+                    <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/58a2c1cb-7c29-48dd-9597-ef03c5cbf857" target="_blank">
+                        <div class="bg-[#1a1c23] aspect-video flex items-center justify-center relative overflow-hidden">
+                            <img src="sdg7onvideo3.jpg" class="h-full object-contain group-hover:scale-105 transition duration-500" alt="亨特先生的環保革命">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30 group-hover:bg-white/40 transition">
+                                    <i data-lucide="play" class="text-white fill-current w-6 h-6 ml-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">亨特先生的環保革命</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-2">記錄傳奇作家對抗環境汙染，集結反叛力量挑戰體制以實踐溫和執法。</p>
+                            <div class="mt-3 text-[10px] font-bold text-[#FDB713]">館藏地：教室電影院公佈大平台</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="resource-card bg-white border rounded-2xl overflow-hidden shadow-sm flex flex-col group">
+                    <a href="https://hsc.app.visionmedia.com.tw/video/detail/trailer/838485fe-5c49-4df2-a340-9f0b80632cfc" target="_blank">
+                        <div class="bg-[#1a1c23] aspect-video flex items-center justify-center relative overflow-hidden">
+                            <img src="sdg7onvideo4.jpg" class="h-full object-contain group-hover:scale-105 transition duration-500" alt="2040">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30 group-hover:bg-white/40 transition">
+                                    <i data-lucide="play" class="text-white fill-current w-6 h-6 ml-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white flex-grow">
+                            <h3 class="font-bold text-gray-800 text-sm mb-1 line-clamp-1">2040</h3>
+                            <p class="text-[11px] text-gray-500 leading-relaxed line-clamp-2">透過科技與影像描繪 2040 願景，扭轉氣候變遷，留給後代乾淨地球。</p>
+                            <div class="mt-3 text-[10px] font-bold text-[#FDB713]">館藏地：教室電影院公佈大平台</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-[#4B4B4B] text-white/80 py-12 text-center space-y-2">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-sm font-medium tracking-wide">Copyright © 新生學校財團法人新生醫護管理專科學校</p>
+            <p class="text-xs opacity-70">325桃園市龍潭區中豐路高平段418號</p>
+            <p class="text-xs opacity-70">TEL: (03)411-7578 轉 250 & 251 | E-Mail: lib@hsc.edu.tw</p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

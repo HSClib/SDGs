@@ -173,19 +173,48 @@
         const container = document.getElementById('sdg-icons-container');
         const baseUrl = "https://open-sdg.github.io/sdg-translations/assets/img/goals/zh-Han/";
 
+        // 💡 17項指標連結控制中心 💡
+        // 在這裡直接輸入您想要的網址。如果是外部網站，請加上 http:// 或 https://
+        // 如果留空 ""，網頁會自動提示「策展中，敬請期待！」
+        const sdgLinks = {
+            1: "https://www.canva.com/design/DAG3VwPvYCM/OUlTRsuVLzD_RPFXRWtCBA/view?utm_content=DAG3VwPvYCM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5411914a59#2",                          // 連到自建分頁
+            2: "https://www.canva.com/design/DAG6PBOjPec/rr8A4yWM0uPtATDjiKOxjA/view?utm_content=DAG6PBOjPec&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbc91fc831c",                          // 連到自建分頁
+            3: "https://www.canva.com/design/DAG8j-qqIjQ/yvC9nOw4FDrxeULNFmv2dg/view?utm_content=DAG8j-qqIjQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hcc9006bf85",                          // 連到自建分頁
+            4: "https://www.canva.com/design/DAG-XOYZ-NY/w5S8oFvXGC1jYqW3WaGI4Q/view?utm_content=DAG-XOYZ-NY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=haa5179325a",                          // 連到自建分頁
+            5: "https://www.canva.com/design/DAHAJoKKIf8/AMxty34JxsO5udu6BEZ9Gg/view?utm_content=DAHAJoKKIf8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h669591383b",                          // 連到自建分頁
+            6: "https://www.canva.com/design/DAHCwPmycOg/GlEPX9495FTnohy26ECYPQ/view?utm_content=DAHCwPmycOg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h32bc224122",                          // 連到自建分頁
+            7: "https://www.canva.com/design/DAHDhy_i9Qw/ZE7zc-rqHnpkkI8jt6NY7A/view?utm_content=DAHDhy_i9Qw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h33974a6b1b", // 範例：點擊直接連到外部網站
+            8: "https://www.canva.com/design/DAHEFiMWyYs/0f16lA_WJd8pQNOygpxzQA/view?utm_content=DAHEFiMWyYs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5b77428f16",                                   // 留空代表尚未發布（策展中）
+            9: "https://www.canva.com/design/DAHEvRy5l_E/jZVhQaqNM9RRt8dh2y2UVQ/view?utm_content=DAHEvRy5l_E&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1ad31ca4e9",
+            10:"https://www.canva.com/design/DAHHWFKfdec/kTp2dxdUQeI1eUUnwmGhdA/view?utm_content=DAHHWFKfdec&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2c03bf5b29",
+            11:"https://www.canva.com/design/DAHHXrm96p0/0nGga2jSoiycBxZZUVDDEg/view?utm_content=DAHHXrm96p0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h80446630d2",
+            12:"https://www.canva.com/design/DAHHocmbGwo/A0FuL6_WmlThVxevjHWibg/view?utm_content=DAHHocmbGwo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h35d2cedad9",
+            13: "",
+            14: "",
+            15: "",
+            16: "",
+            17: ""
+        };
+
         for (let i = 1; i <= 17; i++) {
             const link = document.createElement('a');
-            // 已更新判定條件：將 i <= 6 修改為 i <= 7
-            if (i <= 7) { 
-                link.href = `sdg${i}.html`; 
-            } 
-            else {
+            const targetUrl = sdgLinks[i];
+
+            if (targetUrl && targetUrl !== "") {
+                link.href = targetUrl;
+                // 如果是外部網站（以 http 開頭），設定為開新視窗，校內分頁則在原視窗開啟
+                if (targetUrl.startsWith("http")) {
+                    link.target = "_blank";
+                }
+            } else {
+                // 如果沒有設定網址，觸發提示視窗
                 link.href = "#";
                 link.onclick = (e) => {
                     e.preventDefault();
                     alert("SDG " + i + " 專題分頁正在策展中，敬請期待！");
                 };
             }
+            
             link.className = 'sdg-btn rounded-xl overflow-hidden shadow-sm relative group block bg-white aspect-square'; 
 
             const img = document.createElement('img');
